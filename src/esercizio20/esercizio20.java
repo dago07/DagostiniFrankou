@@ -17,14 +17,26 @@ import java.util.logging.Logger;
 /**
  *
  * @author NICOLASDAGOSTINI
+ * @author UladzislauFrankou
  */
 public class esercizio20 extends Thread{
 
     private ServerSocket server20;
     
     //Creazione ArreyList reg
-    private ArrayList<Tessere> reg = new ArrayList<>();  
+    private ArrayList<Tessere> reg = new ArrayList<>();
     
+    public static void main(String[] args) {
+
+
+
+       try {
+            esercizio20 ser20 = new esercizio20();
+            ser20.start();
+            ser20.join();
+        } catch (IOException | InterruptedException ex) {
+        }
+    }
     
     public esercizio20() throws IOException {
         server20 = new ServerSocket(13);
@@ -52,8 +64,13 @@ public class esercizio20 extends Thread{
                         out.writeInt(risp);
                         break;
                     case 2:
+                        id_utente = in.readInt();
+                        risp = eliminare(id_utente);
+                        out.writeInt(risp);
                         break;
                     case 3:
+                        risp = registrare();
+                        out.writeInt(risp);
                          break;
                     case 4:
                         System.exit(0);
@@ -84,6 +101,22 @@ public class esercizio20 extends Thread{
             }
         }
         return -1;
+    }
+    
+    private int eliminare(int id_utente) {
+        for (int i = 0; i < reg.size(); i++) {
+            if (reg.get(i).getId_utente() == id_utente) {
+                reg.remove(i);
+                return 1;
+            }
+        }
+        return -1;
+    }
+
+   private int registrare() {
+        Tessere t = new Tessere(reg.size() + 1);
+        reg.add(t);
+        return t.getId_utente();
     }
     
 }
