@@ -58,7 +58,7 @@ public class Esercizio21 extends Thread {
         try {
             server.close();
         } catch (IOException ex) {
-            Logger.getLogger(Server21.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Esercizio21.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
