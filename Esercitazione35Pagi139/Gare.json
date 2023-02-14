@@ -1,0 +1,31 @@
+[
+  {
+    "campo": "A",
+    "giudice": "Robot",
+    "squadra": "Galilei",
+    "ora": "12:30:01",
+    "punteggio_percorso": "99",
+    "punteggio_difficolta": "101",
+    "tempo": 600
+  },
+
+  {
+    "campo": "B",
+    "giudice": "Robot",
+    "squadra": "D'Agostini",
+    "ora": "10:22:50",
+    "punteggio_percorso": "72",
+    "punteggio_difficolta": "101",
+    "tempo": 500
+  },
+
+  {
+    "campo": "C",
+    "giudice": "Robot",
+    "squadra": "Frankou",
+    "ora": "16:03:22",
+    "punteggio_percorso": "86",
+    "punteggio_difficolta": "101",
+    "tempo": 793
+  }
+]
