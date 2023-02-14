@@ -1,0 +1,52 @@
+[
+{
+    "paziente":{
+        "nome": "a",
+        "cognome": "a",
+        "codice fiscale": "a193r43e93",
+        "sesso": "M",
+        "età": 25
+    },
+    "prilievo sangue": "2023-02-14 00:00:00",
+    "luogo": {
+        "centro territoriale": "--",
+        "reparto ospedaliero": "--",
+        "domicilio del paziente": "--",
+        "pronto socarso o ambulazione": "--"
+    },
+    "esame":{
+        "data": "--",
+        "codice": "--",
+        "numero di matricolo": "--",
+        "denominazione dell'analisi": "--",
+        "valore numero e unità di misura del risultato": 0,
+        "valore minimo": 0,
+        "valore massimo": 0
+    }
+},
+{
+    "paziente":{
+        "nome": "o",
+        "cognome": "o",
+        "codice fiscale": "tr45434f54f",
+        "sesso": "F",
+        "età": 23
+    },
+    "prilievo sangue": "2023-01-12 00:00:00",
+    "luogo": {
+        "centro territoriale": "--",
+        "reparto ospedaliero": "--",
+        "domicilio del paziente": "--",
+        "pronto socarso o ambulazione": "--"
+    },
+    "esame":{
+        "data": "--",
+        "codice": "--",
+        "numero di matricolo": "--",
+        "denominazione dell'analisi": "--",
+        "valore numero e unità di misura del risultato": 0,
+        "valore minimo": 0,
+        "valore massimo": 0
+    }
+}
+]
